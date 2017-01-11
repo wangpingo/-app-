@@ -56,6 +56,9 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    outline: none;
+    text-indent: 0.88rem;
+    font-size: 1.24rem;
 }
 #yanzhengma{
     width: 10.6rem;

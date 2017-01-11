@@ -54,7 +54,7 @@ body {
 }
 .last {
     position: absolute;
-    background-image: url("../image/22icn_go_gray.png");
+    background-image: url("../img/22icn_go_gray.png");
     background-repeat: no-repeat;
     background-size: 0.88rem 1.51rem;
     background-position: center center;

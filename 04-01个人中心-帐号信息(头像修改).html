@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="head">
-    <img src="image/23icn_back_gray%20.png">
+    <a><img src="img/11icn_back.png"></a>
     帐号信息
 </div>
 <div id="content">
@@ -74,7 +74,7 @@
         取消
     </div>
 </div>
-<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.js"></script>
 <script>
     $(document).ready(function () {
             $('#touxiang').on('click',function () {
@@ -89,7 +89,12 @@
                 $('#mask').toggle();
                 $('#mask').css('opacity','0');
                 $('#foot').slideUp(300);
-            })
+            });
+            $(document).on('scroll',function () {
+            $('#mask').toggle();
+            $('#mask').css('opacity','0');
+            $('#foot').slideUp(300);
+        })
         }
     );
 </script>
