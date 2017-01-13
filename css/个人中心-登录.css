@@ -114,6 +114,7 @@ body {
 }
 .son-content span{
     display: inline-block;
+    font-size: 1.42rem;
     height: 4.22rem;
     line-height: 4.22rem;
 }
