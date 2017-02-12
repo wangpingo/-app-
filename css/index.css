@@ -1,146 +1,129 @@
-html,body{
+@charset "UTF-8";
+@import url(swiper3.07.min.css);
+
+/*通用*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
+    font-weight: 400;
+}
+
+/*header*/
+#header {
+    width: 100%;
+    height: 4.26666rem;
+    line-height: 4.26666rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#header .select {
+    font-size: 1.244444rem;
+    margin-left: 0.8888rem;
+    color: #ffffff;
+}
+
+#header .select .arrow {
+    margin-left: 0.4444rem;
+}
+
+#header .select .arrow img {
+    width: 0.8rem;
+    height: 0.4444rem;
+}
+
+#header .message {
+    width: 1.86666rem;
+    height: 2.1333rem;
+    margin-right: 1.3333rem;
+    margin-top: 1rem;
+}
+
+#header .message img {
     width: 100%;
     height: 100%;
 }
-body {
-    background-color: #fff;
-    font-family: AvenirRoman, HelveticaNeue-Light, Helvetica Neue, arial, Hiragino Sans GB, 冬青黑体, Microsoft YaHei New, Microsoft Yahei, 微软雅黑, 宋体, SimSun, STXihei, 华文细黑, sans-serif;
-    font-weight: 400;
-    background-color: rgb(240, 240, 240);
 
-}
-#info{
+/*slide*/
+#slide {
     width: 100%;
-    height: 18rem;
-    background-image: url("../img/换肤图片/换肤1友谊唯美720.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 18.8rem;
-    background-position: center center;
+    height: 18.4888rem;
     overflow: hidden;
     position: relative;
-    color: rgb(255,255,255);
-    font-size: 1.24rem;
-}
-/*#imgmain{
-	position:absolute;
-	top:0;
-	display:block;
-	width:100%;
-	height: 18.6rem;
-}*/
-#headImage{
-    display: block;
-    width: 6.66rem;
-    height: 6.66rem;
-    border: 0.089rem solid rgb(226,227,228);
-    border-radius: 3.33rem;
-    margin: 1.7rem auto 0 auto;
-}
-#clothImage{
-    display: block;
-    width: 2.66rem;
-    height: 2.66rem;
-    border-radius: 1.33rem;
-    position: absolute;
-    top: 0.88rem;
-    right: 0.88rem;
-}
-#arrowImage{
-    display: block;
-    width: 0.89rem;
-    height: 1.46rem;
-    position: absolute;
-    top: 6rem;
-    right: 1.33rem;
-}
-#font{
-    font-size: 1.06rem;
-    margin-top: 0.97rem;
-    text-align: center;
-}
-#info-footer{
-    position: absolute;
-    width: 100%;
-    height: 5.89rem;
-}
-#info-bottom{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5.89rem;
-    display: -webkit-box;
-    -webkit-box-pack: justify;
-    font-size:2.8rem ;
-}
-.btn{
-    text-align: center;
-    width: 8rem;
-    font-size: 1.24rem;
-}
-.btn span{
-    display: block;
-    height: 2.3rem;
-}
-.btn span.select{
-    line-height: 2.3rem;
-}
-.line{
-    position: absolute;
-    width: 0.089rem;
-    height: 2.8rem;
-    background-color: rgb(230,230,230);
-    top: 1.55rem;
-    left: 10.6rem;
-}
-.line.right{
-    left: 21.33rem;
-}
-#content{
-    width: 100%;
-    /*height: 100%;*/
-    /*background-color: rgb(240,240,240);*/
-}
-.main1{
-    width: 100%;
-    height: 10rem;
-    font-size: 1.4285rem;
-}
-.null{
-    width: 100%;
-    height: 1.11rem;
 }
 
-.son-content{
-    font-size: 1.42rem;
-    color: rgb(99,99,99);
+#slide .swiper-slide {
+    text-align: center;
+    height: 18.4888rem;
+}
+
+#slide .swiper-slide img {
     width: 100%;
-    height: 4.22rem;
-    background-color: rgb(255,255,255);
-    margin-bottom: 0.08rem;
-    text-indent: 1.78rem;
+    max-width: 100%;
+    height: 18.4888rem;
 }
-.son-content span{
+
+#slide .pagination {
+    position: absolute;
+    z-index: 20;
+    bottom: 0.4444rem;
+    width: 100%;
+    text-align: center;
+    right: 0;
+}
+
+#slide .swiper-pagination-bullet {
     display: inline-block;
-    height: 4.22rem;
-    line-height: 4.22rem;
+    width: 0.4444rem;
+    height: 0.4444rem;
+    border-radius: 50%;
+    background: #969696;
+    margin: 0 0.35rem;
+    opacity: 0.8;
+    cursor: pointer;
 }
-.son-content span.img{
-    background-image: url("../img/18icn_eva.png") ;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 1.68rem 1.68rem;
-    background-position: center center;
+
+#slide .swiper-pagination-bullet-active {
+    background: #fff;
 }
-.last{
-    float: right;
-    overflow: hidden;
-    margin-right: 1.51rem;
+
+/*content*/
+#content {
+    width: 100%;
+    position: relative;
+    margin-bottom: 4.1777rem;
 }
-.lastimg{
-    margin-top:1rem ;
-    width: 0.89rem;
-    height: 1.42rem;
+
+#content .content-box {
+    margin-top: 0.1777rem;
+    width: 100%;
 }
+
+#content .content-right, #content .content-left {
+    width: 49.5%;
+}
+
+#content .content-box img {
+    width: 100%;
+    max-width: 100%;
+}
+
 /*nav*/
 #nav {
     position: fixed;
@@ -232,3 +215,9 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
 }
+
+
+
+
+
+

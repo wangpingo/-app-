@@ -59,10 +59,11 @@ body {
     outline: none;
     text-indent: 0.88rem;
     font-size: 1.24rem;
+    padding:0;
 }
 #yanzhengma{
     width: 10.6rem;
-    height: 4.26rem;
+    height: 4.36rem;
     position: absolute;
     right: 0;
     background: rgb(230,109,109);
@@ -70,6 +71,7 @@ body {
     font-size: 1.24rem;
     text-align: center;
     line-height: 4.26rem;
+   
 }
 #next{
     width: 13.3rem;
